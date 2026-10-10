@@ -101,9 +101,9 @@
 
 ## 📦 다운로드 & 처음 실행하기
 
-1. **[타이머 ZIP 다운로드](https://raw.githubusercontent.com/skgr07/chiikawa_timer_share/main/chiikawa_timer_source_shortcut.zip)**를 눌러 받으세요.
+1. [타이머 ZIP 다운로드](https://raw.githubusercontent.com/skgr07/chiikawa_timer_share/main/chiikawa_timer_source_shortcut.zip)를 눌러 받으세요.
 2. ZIP **전체를 압축 해제**하고, 안쪽의 `chiikawa_timer_python` 폴더를 여세요.
-3. Windows 64비트용 **[Python 3.10 이상](https://www.python.org/downloads/windows/)**을 설치하세요. 설치 시 Python 실행 명령을 사용할 수 있도록 설정합니다.
+3. Windows 64비트용 [Python 3.10 이상](https://www.python.org/downloads/windows/)을 설치하세요. 설치 시 Python 실행 명령을 사용할 수 있도록 설정합니다.
 4. 프로그램 폴더에서 터미널을 열고 아래 두 명령을 차례대로 실행하세요.
 
 ```powershell
