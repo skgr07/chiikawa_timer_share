@@ -13,7 +13,6 @@
 
 **[📦 타이머 다운로드](https://raw.githubusercontent.com/skgr07/chiikawa_timer_share/main/chiikawa_timer_source_shortcut.zip)**
 
-<sub>Python 소스 + 사용자 PC에서 만드는 바로가기 방식으로 실행합니다.</sub>
 
 </div>
 
@@ -88,7 +87,6 @@
 | 원하는 위치로 | 캐릭터를 드래그하면 원과 시간도 함께 이동 |
 | 프로그램 종료 | 대기 중 타이머 설정 → 종료, 또는 알림 영역 아이콘 → 종료 |
 
-<sub>GIF는 기존 브라우저 데모에서 촬영한 소개용 영상입니다. 현재 Python 앱의 실제 배치와 화면은 아래 이미지에서 확인할 수 있어요.</sub>
 
 <details>
 <summary>현재 Python 앱 화면 보기</summary>
@@ -107,7 +105,7 @@
 
 **① CMD에서 Python 설치**
 
-아래 명령을 입력하고 설치가 끝날 때까지 기다리세요. 이미 Python 3.12가 설치되어 있다면 이 단계는 건너뛰어도 됩니다.
+아래 명령어를 입력하고 설치가 끝날 때까지 기다리세요. 이미 Python 3.12가 설치되어 있다면 이 단계는 건너뛰어도 됩니다.
 
 ```cmd
 winget install --id Python.Python.3.12 --exact --source winget --architecture x64 --scope user --accept-source-agreements --accept-package-agreements
@@ -129,19 +127,11 @@ py -3.12 --version
 cd /d "%USERPROFILE%\Downloads\chiikawa_timer_source_shortcut\chiikawa_timer_python"
 ```
 
-다른 곳에 압축을 풀었다면 탐색기에서 **`chiikawa_timer.py`가 들어 있는 폴더**를 열고 주소 표시줄의 경로를 복사하세요. 아래 큰따옴표 안을 복사한 실제 경로로 바꾸어 입력하면 됩니다.
+다른 곳에 압축을 풀었다면 탐색기에서 **`chiikawa_timer.py`가 들어 있는 폴더**를 열고 주소 표시줄의 경로를 복사하세요. "실제 압축을 푼 경로" 자리에 폴더 경로를 넣습니다.
 
 ```cmd
 cd /d "C:\실제로 압축을 푼 경로\chiikawa_timer_python"
 ```
-
-이동한 폴더의 파일 목록을 확인하세요.
-
-```cmd
-dir
-```
-
-`chiikawa_timer.py`, `requirements.txt`, `create_shortcut.py`, `assets`가 보이면 올바른 폴더입니다. 파일이 보이지 않거나 경로를 찾을 수 없다는 오류가 나오면 폴더 경로부터 확인하세요.
 
 **③ 필요한 라이브러리 설치**
 
@@ -157,20 +147,11 @@ py -3.12 -m pip install -r requirements.txt
 py -3.12 create_shortcut.py
 ```
 
-프로그램 폴더에 **`치이카와 타이머.lnk`**가 생성됩니다.
-
-**⑤ 타이머 실행**
-
-생성된 바로가기를 더블클릭하거나, 같은 CMD에서 아래 명령을 입력하세요.
-
-```cmd
-start "" "치이카와 타이머.lnk"
-```
-
+다운받은 폴더에 생성된 치이카와 타이머 바로가기를 찾아 실행하면 됩니다. 
 캐릭터가 나타나면 CMD 창을 닫아도 됩니다. 이후에는 바로가기만 더블클릭하면 실행됩니다. 바로가기를 바탕화면에 복사해도 되며, 프로그램 폴더를 옮기거나 Python 경로가 바뀌면 새 위치에서 `py -3.12 create_shortcut.py`를 다시 실행하세요.
 
 <details>
-<summary>설치 명령이 작동하지 않는다면</summary>
+<summary>설치 명령이 작동하지 않는다면?</summary>
 
 - `winget`을 찾을 수 없다고 나오면 [Python 공식 다운로드](https://www.python.org/downloads/windows/)에서 Python 3.12의 Windows 64비트 설치 프로그램을 받아 설치하세요. 설치 화면에서 Python 실행 경로 추가와 Python Launcher 설치 옵션을 확인한 뒤 CMD를 다시 여세요.
 - `py -3.12 --version`이 실패하면 Python 3.12가 설치됐는지 확인하세요.
@@ -181,25 +162,13 @@ start "" "치이카와 타이머.lnk"
 
 </details>
 
-<details>
-<summary>12초 체험으로 확인하기</summary>
-
-```cmd
-py -3.12 chiikawa_timer.py --demo --character chiikawa
-py -3.12 chiikawa_timer.py --demo --character hachiware
-py -3.12 chiikawa_timer.py --demo --character usagi
-```
-
-원하는 캐릭터의 명령 하나를 실행하세요.
-
-</details>
 
 <details>
 <summary>실행 방식 안내</summary>
 
-이 배포본은 Python 소스입니다. 바로가기는 사용자 PC의 `pythonw.exe`로 소스를 실행하며, 제작자의 경로가 들어 있는 바로가기를 그대로 배포하지 않습니다. 앱을 실행하는 Python 프로세스를 종료하면 타이머도 종료됩니다.
+이 배포본은 Python 소스입니다. 바로가기는 사용자 PC의 `pythonw.exe`로 소스를 실행하며, 앱을 실행하는 Python 프로세스를 종료하면 타이머도 종료됩니다.
 
-Python과 Qt 라이브러리에도 Windows의 실행 정책이 적용됩니다. 바로가기 사용은 코드 서명이나 스마트 앱 컨트롤의 허용을 의미하지 않습니다.
+Python과 Qt 라이브러리에도 Windows의 실행 정책이 적용됩니다. 
 
 </details>
 
