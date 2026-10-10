@@ -12,8 +12,6 @@
 ![PySide6](https://img.shields.io/badge/PySide6-6.12.0-F1C875?style=flat-square)
 
 **[📦 타이머 다운로드](https://raw.githubusercontent.com/skgr07/chiikawa_timer_share/main/chiikawa_timer_source_shortcut.zip)**
-&nbsp; · &nbsp;
-**[🛠️ GPT 만들기 자료 다운로드](https://raw.githubusercontent.com/skgr07/chiikawa_timer_share/main/chiikawa_timer_gpt_materials.zip)**
 
 <sub>Python 소스 + 사용자 PC에서 만드는 바로가기 방식으로 실행합니다.</sub>
 
@@ -153,20 +151,7 @@ Python과 Qt 라이브러리에도 Windows의 실행 정책이 적용됩니다. 
 
 </details>
 
-## 🛠️ GPT로 직접 만들고 수정하기
-
-**[GPT 만들기 자료 ZIP](https://raw.githubusercontent.com/skgr07/chiikawa_timer_share/main/chiikawa_timer_gpt_materials.zip)**에는 자세한 프롬프트, 기준 코드, 원본 이미지·음악·폰트, 비교 이미지와 기능 테스트가 들어 있습니다.
-
-1. GPT에 만들기 자료 ZIP을 첨부하세요.
-2. ZIP 안의 `01_GPT에_붙여넣을_전체프롬프트.txt`를 메시지에 붙여넣으세요.
-3. 제공된 코드와 자산을 보존해 실행 가능한 소스 ZIP을 만들어 달라고 요청하세요.
-
-프롬프트만으로 결과가 완전히 같아지는 것은 보장할 수 없습니다. 기준 코드와 자산을 함께 사용해야 재현 차이를 줄일 수 있어요.
-
-- [처음 사용하는 방법](prompts/00_사용방법.txt)
-- [전체 프롬프트와 기준 코드 전문](prompts/01_GPT에_붙여넣을_전체프롬프트.txt)
-- [좌표·모션·메뉴 상세 명세](prompts/02_재현_상세명세.txt)
-- [배포 ZIP의 SHA256](SHA256SUMS.txt)
+[배포 ZIP의 SHA256 확인](SHA256SUMS.txt)
 
 ---
 

@@ -1,2 +1,1 @@
 b576a24daa627f1e6e6bb1a40b647e5e50de3cc627a1735a06a4a4e62d4efcb0  chiikawa_timer_source_shortcut.zip
-e33b6a3b39e76bd2913ed078e60a9a12755b5b3f8181e24f69d6ac468ac1a4c3  chiikawa_timer_gpt_materials.zip
